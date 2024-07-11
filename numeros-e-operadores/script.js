@@ -1,9 +1,30 @@
-var total1 = 10 + 5 + 10
-var divisao = 200 / 5
-var modulo = 8173520295 % 3
+// Qual o resultado da seguinte expressão?
 
-console.log(total1)
+var total = 10 + 5 * 2 / 2 + 20;
+console.log(total) // resultado: 35
 
+// Crie duas expressões que retornem NaN 
 
-var testeNaN = 'isso é 100' / 2
-console.log(testeNaN)
+var x = 'a25'/ 10
+console.log(x)
+
+var y = '10 pras 5' / 2
+console.log(y)
+
+// Somar a string '200' com o número 50 e retornar 250
+
+var a = '200'
+var b = 50
+console.log(+a + b)
+
+// Incremente o número 5 e retorne o seu valor incrementado
+
+var z = 5
+console.log(++z)
+
+// Como dividir o peso por 2?
+var numero = +'100' / 2
+var unidade = 'kg'
+var peso = numero + unidade;
+var pesoPorDois = numero / 2
+console.log(peso)
