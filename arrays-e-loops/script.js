@@ -1,13 +1,33 @@
-var videoGames = ['play2', 'play4', 'xbox360']
+// Crie uma array com os anos que o Brasil ganhou a copa
+// 1959, 1962, 1970, 1994, 2002
 
-var ultimoItem = videoGames.pop()
+var copas = [1959, 1962, 1970, 1994, 2002,]
 
-for (var numero = 1; numero <= 10; numero++) {
-    console.log(numero)
+for(var item = 0; item < copas.length; item++) {
+    console.log(copas[item])
 }
 
-var i = 0
-while (i < 10) {
-    console.log(i)
-    i++
+// Interaja com a array utilizando um loop, para mostrar
+// no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
+
+var copas = [1959, 1962, 1970, 1994, 2002,]
+
+for(var item = 0; item < copas.length; item++) {
+    console.log(`o Brasil ganhou a copa de ` + copas[item])
 }
+
+// Interaja com um loop nas frutas abaixo e pare ao chegar em Pera
+var frutas = ['Banana', 'Maçã', 'Pera', 'Uva', 'Melância']
+
+for(var i = 0; i < frutas.length; i++) {
+    console.log(frutas[i])
+    if(frutas[i] === 'Pera')
+        break
+}
+
+// Coloque a última fruta da array acima em uma variável,
+// sem remover a mesma da array.
+
+var fruta = frutas[4]
+
+console.log(fruta)
