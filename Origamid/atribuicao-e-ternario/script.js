@@ -1,25 +1,21 @@
-var numero = 20
-var numero2 = 10
+// Some 500 ao valor de scroll abaixo,
+// atribuindo o novo valor a scroll
+var scroll = 1000;
+var scroll2 = 500
 
-// numero += 10; numero = numero + 10;
+scroll += scroll2
 
-numero += numero2
-
-console.log(numero)
-
-
-var idade = 18
-var naoEstaDirigindo = true
-
-var podeBeber
-podeBeber = (idade >= 18 && naoEstaDirigindo) ? `Pode beber` : `Não pode beber`
-
-console.log(podeBeber)
+console.log(scroll)
 
 
-var possuiHabilitacao = false
+// Atribua true para a variável darCredito,
+// caso o cliente possua carro e casa.
+// E false caso o contrário.
+var possuiCarro = true;
+var possuiCasa = true;
 
-if(possuiHabilitacao)
-    console.log('Liberado para dirigir')
-else 
-    console.log('Não pode dirigir')
+
+var darCredito = (possuiCarro === true && possuiCasa === true) ? true : false
+// pode tambem ser feito dessa maneira: var darCredito = (possuiCarro && possuiCasa) 
+
+console.log(darCredito)
