@@ -1,22 +1,25 @@
-const animais = document.getElementById('animais') // seleciona um id
-console.log(animais)
+// Retorne no console todas as imagens do site
 
-const gridSection = document.getElementsByClassName('grid-section') //seleciona uma class
-console.log(gridSection[1])
+const todasImg = document.querySelectorAll('img')
+console.log(todasImg)
 
-const ul = document.getElementsByTagName('ul') //selecionar uma tag
-console.log(ul[1])
+// Retorne no console apenas as imagens que começaram com a palavra imagem
 
-const primeiraLi = document.querySelector('li') // o querySelector sempre vai retornar o primeiro, ele nao retorna todos.
-console.log(primeiraLi)
+const imgAnimais = document.querySelectorAll('img[src^="img/imagem"]')
+console.log(imgAnimais)
 
-const primeiraUl = document.querySelector('ul')
-console.log(primeiraUl)
+// Selecione todos os links internos (onde o href começa com #)
 
-const linkInterno = document.querySelector('[href^="#"]') // isso é pra selecionar algum link interno. ^ significa que começa com "#"
-console.log(linkInterno)
+const linksInternos = document.querySelectorAll('[href^="#"]')
+console.log(linksInternos)
 
-// lembrando que voce tambem pode colocar metodos e propriedades como: .length
+// Selecione o primeiro h2 dentro de .animais-descricao
 
-const animaisImg = document.querySelectorAll('.animais img') // o querySelectorAll seleciona todos os elementos, por isso se chama ALL //estou pegando todas as img que estao na class .animais
-console.log(animaisImg[1])
+const h2 = document.querySelector('.animais-descricao h2')
+console.log(h2)
+
+// Selecione o último p do site
+
+const ultimoP = document.querySelector('p:last-of-type'); //last-of-type significa: ultimo do tipo
+console.log(ultimoP)
+
